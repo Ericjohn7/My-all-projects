@@ -1,0 +1,74 @@
+.education {
+  height: 100vh;
+  overflow: hidden;
+  padding: 80px 9%;
+  background-color: #1f242d;
+  color: #fff;
+}
+
+.education .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 40px;
+  margin-bottom: 50px;
+  color: #4182e2;
+  text-align: center;
+}
+
+.education-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px 40px;
+}
+
+.education-item {
+  background-color: #1f242d;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(65, 130, 226, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(65, 130, 226, 0.6);
+}
+
+.education-item h3 {
+  font-size: 22px;
+  color: #4182e2;
+  margin-bottom: 8px;
+}
+
+.edu-institution {
+  font-weight: 600;
+  color: #a0a6b8;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.edu-duration {
+  font-style: italic;
+  color: #7a7f95;
+}
+
+.education-item p {
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .education {
+    padding: 60px 5%;
+  }
+  
+  .education-list {
+    grid-template-columns: 1fr;
+  }
+}

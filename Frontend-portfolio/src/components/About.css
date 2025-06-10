@@ -1,0 +1,119 @@
+.about {
+  height: 100vh;
+  padding: 80px 9%;
+  background-color: #12161d;
+  color: #fff;
+}
+
+.about-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.about-img {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 120px;
+}
+
+.about-img img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  border: 2px solid #4182e2;
+  box-shadow: 0 0 15px rgba(65, 130, 226, 0.5);
+}
+
+.about-content {
+  flex: 1 1 500px;
+}
+
+.about-content h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #4182e2;
+}
+
+.about-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.personal-info {
+  margin-top: 20px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 40px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #4182e2;
+  padding-bottom: 10px;
+}
+
+.info-item .label {
+  font-weight: 600;
+  color: #4182e2;
+  margin-bottom: 5px;
+}
+
+.info-item .value {
+  font-weight: 400;
+  color: #fff;
+}
+
+.signature {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.signature-image img {
+  width: 120px;
+  margin-right: 20px;
+}
+
+.signature-info h4 {
+  color: #4182e2;
+  font-size: 20px;
+  margin: 0;
+}
+
+.signature-info p {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .info-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .signature {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .signature-image {
+    margin-bottom: 10px;
+  }
+}
